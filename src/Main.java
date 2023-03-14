@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
     Person Oleg = new Person();
-    Oleg.name = "Игнатьев Олег";
+    Oleg.name = "Игнашевич Олег";
     Oleg.age = 22;
 
     Oleg.move();

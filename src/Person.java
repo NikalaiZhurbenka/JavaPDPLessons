@@ -7,7 +7,7 @@ public class Person {
     }
 
     public void talk(){
-    System.out.println("Человек с именем " + name +" и возрастом " + age + " говорит");
+    System.out.println("Человек с именем " + name +" и возрастом " + age + " говорит ");
     }
 
      Person(){}
