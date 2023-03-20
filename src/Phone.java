@@ -31,7 +31,7 @@ public class Phone {
     }
 
     public void recieveCall(String Name) {
-        System.out.println("Звонит:" + Name);
+        System.out.println("Call:" + Name);
     }
 
     public void getNumber(String phoneNumber) {
@@ -39,7 +39,7 @@ public class Phone {
     }
 
     public void recieveCall(String Name, String number) {
-        System.out.println("Звонит:" + Name + number);
+        System.out.println("Call:" + Name + number);
     }
 
     public void sendMessage(String... numbers) {

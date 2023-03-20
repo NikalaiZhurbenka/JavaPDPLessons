@@ -10,6 +10,6 @@ public class Line7_3 {
         Set<String> SetLine = new HashSet<String>();
         SetLine.addAll(Arrays.asList(numbers.split(" ")));
         System.out.println(SetLine);
-        //to do - Добавить обработку, что бы выводило только int значения.
+
     }
 }

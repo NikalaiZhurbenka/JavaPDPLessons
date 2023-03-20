@@ -6,12 +6,12 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         // task 4.2
         Person Oleg = new Person();
-        Oleg.name = "Игнашевич Олег";
+        Oleg.name = "Ignashevich Oleg";
         Oleg.age = 22;
 
         Oleg.move();
 
-        Person Anton = new Person("Гранковский Aнтон", 22);
+        Person Anton = new Person("Grankovski Anton", 22);
         Anton.talk();
 
         //Task 4.1
@@ -27,8 +27,8 @@ public class Main {
         System.out.println(tel3);
 
         tel1.recieveCall("Mama");
-        tel2.recieveCall("papa");
-        tel3.recieveCall("Sestra");
+        tel2.recieveCall("Father");
+        tel3.recieveCall("Sister");
 
         tel1.getNumber("+375445159529");
         tel2.getNumber("+375293328618");
@@ -39,9 +39,9 @@ public class Main {
         tel4.sendMessage("+37544515952", "+37544515152");
 
         //task 4.4
-        Library Person1 = new Library("Егор", "1", "матфак", "12.12.2000", "+495223422");
-        Library Person2 = new Library("Олег", "2", "юрфак", "21.02.1990", "+255223422");
-        Library Person3 = new Library("Антон", "3", "исторический", "29.02.1987", "+987223422");
+        Library Person1 = new Library("Egor", "1", "math", "12.12.2000", "+495223422");
+        Library Person2 = new Library("Oleg", "2", "history", "21.02.1990", "+255223422");
+        Library Person3 = new Library("Anton", "3", "history", "29.02.1987", "+987223422");
 
         String[] Persons = new String[3];
         Persons[0] = Person1.toString();
@@ -51,14 +51,16 @@ public class Main {
             System.out.println(person);
         }
 
-        Person2.takeBook(",Джава для чайников", "245");
-        Person3.returnBook(",Джава для умных", "249");
-        Person1.takeBook("Книга1", "Книга2", "Книга3", "Книга4", "Книга5", "Книга6");
-        Person1.takeBook(true, "Книга1", "Книга2", "Книга3", "Книга4", "Книга5", "Книга6");
+        Person2.takeBook(",Java lessons lvl1", "245");
+        Person3.returnBook(",Java lessons lvl2", "249");
+        Person1.takeBook("Book1", "Book2", "Book3", "Book4", "Book5", "Book6");
+        Person1.takeBook(true, "Book1", "Book2", "Book3", "Book4", "Book5", "Book6");
 
 
-        Person1.takeBook(new Book("Капитанская дочка", "Пушкин А.С."), new Book("Война и мир", "Толстой Л.Н."), new Book("Смерть поэта", "Лермонтов М.Ю"));
-        Person1.returnBook(new Book("Капитанская дочка", "Пушкин А.С."), new Book("Война и мир", "Толстой Л.Н."), new Book("Смерть поэта", "Лермонтов М.Ю"));
+        Person1.takeBook(new Book("Test1", "Puschkin A.S"), new Book("War and Piece", "Tolstoi L.N."), new Book("Test3", "Lermontov M.U."));
+        Person1.returnBook(new Book("Test1", "Puschkin A.S"), new Book("War and Piece", "Tolstoi L.N."), new Book("Test3", "Lermontov M.U."));
+
+        //task 4.3
         Matrix m = new Matrix(3, 3);
         Matrix.outputMatrix(m);
         Matrix m2 = new Matrix(3, 3);

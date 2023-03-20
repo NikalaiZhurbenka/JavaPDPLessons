@@ -16,8 +16,7 @@ public class Library {
         this.phone = phone;
 
     }
-
-    //    Library(String BookName, String BookID){
+//    Library(String BookName, String BookID){
 //
 //        this.BookName = BookName;
 //        this.BookID = BookID;
@@ -36,7 +35,7 @@ public class Library {
     }
 
     public void takeBook(String... Books) {
-        System.out.println("Студент: " + studentName + " Взял " + Books.length + " книг");
+        System.out.println("Student: " + studentName + " Take " + Books.length + " Books");
     }
 
     public void takeBook(boolean test, String... ListBooks) {
@@ -53,7 +52,7 @@ public class Library {
         for (int i = 0; i < NameBooks.length; i++) {
             endString.append(NameBooks[i] + ",");
         }
-        System.out.println(studentName + " взял книги: " + endString);
+        System.out.println(studentName + " Take books: " + endString);
     }
 
     public void returnBook(String BookName, String BookID) {
@@ -61,6 +60,6 @@ public class Library {
     }
 
     public void returnBook(Book... NameBooks) {
-        System.out.println(studentName + " вернул " + NameBooks.length + " книги: ");
+        System.out.println(studentName + " return " + NameBooks.length + " books: ");
     }
 }

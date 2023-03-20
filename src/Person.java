@@ -3,11 +3,11 @@ public class Person {
     int age;
 
     public void move() {
-        System.out.println("Человек с именем " + name + " и возрастом " + age + " идёт");
+        System.out.println("Person with name " + name + " and age " + age + " walk");
     }
 
     public void talk() {
-        System.out.println("Человек с именем " + name + " и возрастом " + age + " говорит ");
+        System.out.println("Person with name " + name + " and age " + age + " talk ");
     }
 
     Person() {
