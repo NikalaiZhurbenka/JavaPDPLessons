@@ -91,7 +91,7 @@ public class Main {
             students.add(studentforTest);
             System.out.println("Student added");
         } else {
-            System.out.println("Student already exists. Index: "+g);
+            System.out.println("Student already exists. Index: " + g);
         }
     }
 }
