@@ -1,5 +1,5 @@
-import java.sql.Timestamp;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
 
@@ -68,5 +68,30 @@ public class Main {
         Matrix.outputMatrix(m.summMatrix(m2));
         Matrix.outputMatrix(m.multiplyMatrix(5));
         Matrix.outputMatrix(m.multiplyMatrixByMatrix(m2));
+
+
+        //task 7.1
+        ArrayList<Students> students = new ArrayList<>();
+        students.add(new Students("Oleg", "Plushkin", 11));
+        students.add(new Students("Oleg1", "Plushkin", 23));
+        students.add(new Students("Oleg2", "Plushkin", 42));
+        students.add(new Students("Oleg3", "Plushkin", 55));
+        students.add(new Students("Oleg4", "Plushkin", 62));
+        students.add(new Students("Oleg5", "Plushkin", 20));
+        students.add(new Students("Artem", "Cringevsky", 33));
+        if (students.get(1).age == students.get(0).age) {
+            System.out.println("Student" + students.get(0).name + " have same age as " + students.get(1).name);
+        } else {
+            System.out.println("Students have differ name");
+        }
+
+        Students studentforTest = new Students("Artem", "Cringevsky", 33);
+        int g = students.indexOf(studentforTest);
+        if (g == -1) {
+            students.add(studentforTest);
+            System.out.println("Student added");
+        } else {
+            System.out.println("Student already exists. Index: "+g);
+        }
     }
 }
