@@ -1,20 +1,22 @@
+package Lesson4_1;
+
 public class Phone {
     public int number;
     public String model;
     public int weight;
 
     //Конструктор без параметров
-    Phone() {
+    public Phone() {
     }
 
     //конструктор с 2 параметрами
-    Phone(int number, String model) {
+    public Phone(int number, String model) {
         this.number = number;
         this.model = model;
     }
 
     //конструктор с тремя параметрами
-    Phone(int number, String model, int weight) {
+    public Phone(int number, String model, int weight) {
         this.number = number;
         this.model = model;
         this.weight = weight;
@@ -35,7 +37,7 @@ public class Phone {
     }
 
     public void getNumber(String phoneNumber) {
-        System.out.println("Phone number:" + phoneNumber);
+        System.out.println("Lesson4_1.Phone number:" + phoneNumber);
     }
 
     public void recieveCall(String Name, String number) {

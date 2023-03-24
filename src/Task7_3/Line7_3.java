@@ -1,3 +1,5 @@
+package Task7_3;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;

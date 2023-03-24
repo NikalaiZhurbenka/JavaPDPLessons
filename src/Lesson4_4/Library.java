@@ -1,4 +1,6 @@
-import java.util.Date;
+package Lesson4_4;
+
+import Lesson4_4.Book;
 
 public class Library {
     String studentName;
@@ -8,7 +10,7 @@ public class Library {
     String phone;
 
 
-    Library(String studentName, String ID, String department, String dateOfBirth, String phone) {
+    public Library(String studentName, String ID, String department, String dateOfBirth, String phone) {
         this.studentName = studentName;
         this.ID = ID;
         this.department = department;
@@ -17,7 +19,7 @@ public class Library {
 
     }
 
-    //    Library(String BookName, String BookID){
+    //    Lesson4_4.Library(String BookName, String BookID){
 //
 //        this.BookName = BookName;
 //        this.BookID = BookID;
@@ -28,11 +30,11 @@ public class Library {
 
 
     public String toString() {
-        return "Name:" + studentName + " StudentID:" + ID + " Where Studing: " + department + " Date of Birthday: " + dateOfBirth + " Phone: " + phone;
+        return "Name:" + studentName + " StudentID:" + ID + " Where Studing: " + department + " Date of Birthday: " + dateOfBirth + " Lesson4_1.Phone: " + phone;
     }
 
     public void takeBook(String BookName, String BookID) {
-        System.out.println("Person with ID: " + ID + " Take book. Book ID and Name: " + BookID + " " + BookName);
+        System.out.println("Lesson4_2.Person with ID: " + ID + " Take book. Lesson4_4.Book ID and Name: " + BookID + " " + BookName);
     }
 
     public void takeBook(String... Books) {
@@ -57,7 +59,7 @@ public class Library {
     }
 
     public void returnBook(String BookName, String BookID) {
-        System.out.println("Person with ID: " + ID + " Return book. Book ID and Name: " + BookID + " " + BookName);
+        System.out.println("Lesson4_2.Person with ID: " + ID + " Return book. Lesson4_4.Book ID and Name: " + BookID + " " + BookName);
     }
 
     public void returnBook(Book... NameBooks) {

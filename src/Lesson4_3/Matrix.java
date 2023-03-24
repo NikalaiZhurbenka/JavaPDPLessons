@@ -1,4 +1,4 @@
-import java.util.Random;
+package Lesson4_3;
 
 public class Matrix {
     double[][] matrix;
@@ -46,7 +46,7 @@ public class Matrix {
             }
             return matrix2;
         } else {
-            System.out.println("Matrix can't be summed");
+            System.out.println("Lesson4_3.Matrix can't be summed");
             return this;
 
         }
@@ -83,7 +83,7 @@ public class Matrix {
             }
             return matrix4;
         } else {
-            System.out.println("Matrix cant be multiplied");
+            System.out.println("Lesson4_3.Matrix cant be multiplied");
             return this;
         }
     }

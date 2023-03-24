@@ -1,5 +1,11 @@
+import Lesson4_1.Phone;
+import Lesson4_2.Person;
+import Lesson4_3.Matrix;
+import Lesson4_4.Book;
+import Lesson4_4.Library;
+import Lesson7_1.Students;
+
 import java.util.ArrayList;
-import java.util.HashSet;
 
 public class Main {
 
@@ -82,7 +88,7 @@ public class Main {
         if (students.get(1).age == students.get(0).age) {
             System.out.println("Student" + students.get(0).name + " have same age as " + students.get(1).name);
         } else {
-            System.out.println("Students have differ name");
+            System.out.println("Lesson7_1.Students have differ name");
         }
 
         Students studentforTest = new Students("Artem", "Cringevsky", 33);
