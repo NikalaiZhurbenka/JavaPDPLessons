@@ -5,24 +5,24 @@ public class Phone {
     public String model;
     public int weight;
 
-    //Конструктор без параметров
+    //without parameters
     public Phone() {
     }
 
-    //конструктор с 2 параметрами
+    //with 2 parameters
     public Phone(int number, String model) {
         this.number = number;
         this.model = model;
     }
 
-    //конструктор с тремя параметрами
+    //with 3 parameters
     public Phone(int number, String model, int weight) {
         this.number = number;
         this.model = model;
         this.weight = weight;
     }
 
-    // конструктор с 2 параметрами из конструктора с 3 параметрами
+
     Phone(int number, int weight, String model) {
         this(number, model);
         this.weight = weight;
