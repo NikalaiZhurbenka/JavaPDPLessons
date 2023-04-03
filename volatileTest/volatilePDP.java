@@ -1,7 +1,7 @@
 package volatileTest;
 
 public class volatilePDP {
-    public  int value = 0;
+    public volatile int value = 0;
 
     public void increaseValue() {
         value++;
