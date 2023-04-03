@@ -2,7 +2,7 @@ package KeyWordSynchronized;
 
 public class syncMethods implements Runnable {
     public int value=0;
-
+// test synchronized keyword
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new syncMethods(), "Thread1");
         thread.start();
