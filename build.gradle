@@ -1,0 +1,9 @@
+apply plugin: 'java'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'joda-time:joda-time:2.12.2'
+    implementation 'org.joda:joda-money:1.0.3'
+}
+archivesBaseName = 'project1'
