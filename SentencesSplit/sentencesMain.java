@@ -23,20 +23,25 @@ public class sentencesMain {
             System.out.println("\nChoose option:\n -[1] Create sentences: \n -[2] Start again: \n -[3] Get amount of words in sentences: \n -[4] Get amount of symbols in sentences: \n -[5] Remove  punctuation and spaces: \n -[6] Exit program");
             switch (userOption.nextLine()) {
                 case "1":
-                    Scanner firstSentence = new Scanner(System.in);
-                    Scanner secondSentence = new Scanner(System.in);
-                    System.out.println("Enter First sentence");
-                    first = firstSentence.nextLine();
-                    if (first.length() > 200) {
-                        first = null;
-                        System.out.println("Max symbols amount is 200");
-                        break;
-                    }
-                    System.out.println("Enter Second sentence");
-                    second = secondSentence.nextLine();
-                    if (second.length() > 200) {
-                        second = null;
-                        System.out.println("Max symbols amount is 200");
+                    if (first == null || second == null) {
+                        Scanner firstSentence = new Scanner(System.in);
+                        Scanner secondSentence = new Scanner(System.in);
+                        System.out.println("Enter First sentence");
+                        first = firstSentence.nextLine();
+                        if (first.length() > 200) {
+                            first = null;
+                            System.out.println("Max symbols amount is 200");
+                            break;
+                        }
+                        System.out.println("Enter Second sentence");
+                        second = secondSentence.nextLine();
+                        if (second.length() > 200) {
+                            second = null;
+                            System.out.println("Max symbols amount is 200");
+                            break;
+                        }
+                    } else {
+                        System.out.println("sentence already exists");
                         break;
                     }
                     System.out.println("\nResult of first sentence\n" + first);
